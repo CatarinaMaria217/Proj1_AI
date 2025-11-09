@@ -1,0 +1,5 @@
+timestamp,task,model,split,accuracy,precision,recall,f1,roc_auc,mae,rmse,r2,test_size,seed
+1762714130,classification,logreg_cls,random_stratified,0.7439,0.8477,0.7151,0.7758,0.8537,,,,0.2,42
+1762714131,classification,rf_cls,random_stratified,0.8028,0.8112,0.8883,0.848,0.8345,,,,0.2,42
+1762714134,regression,linreg_no2,temporal,,,,,,5.127,6.5746,0.7545,0.2,42
+1762714136,regression,rfreg_no2,temporal,,,,,,5.1542,6.6745,0.747,0.2,42
