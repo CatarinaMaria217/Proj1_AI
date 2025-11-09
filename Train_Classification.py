@@ -42,12 +42,12 @@ X = df[numeric_features + categorical_features]
 y = df['label_air_good']
 
 # Train-test split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=17)
 
 # Modelos
 models = {
     "Logistic Regression": LogisticRegression(max_iter=1000),
-    "Random Forest": RandomForestClassifier(n_estimators=200, random_state=42)
+    "Random Forest": RandomForestClassifier(n_estimators=200, random_state=17)
 }
 
 # Treinamento e avaliação
