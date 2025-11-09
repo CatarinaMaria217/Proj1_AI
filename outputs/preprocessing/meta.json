@@ -1,0 +1,46 @@
+{
+  "num_cols_cls": [
+    "co",
+    "no2",
+    "o3",
+    "pm10",
+    "pm2_5",
+    "so2",
+    "temperature_c",
+    "humidity_percent",
+    "pressure_hpa",
+    "wind_speed_kmh",
+    "wind_direction_deg",
+    "precipitation_mm",
+    "hour",
+    "dow"
+  ],
+  "cat_cols_cls": [
+    "city",
+    "datetime"
+  ],
+  "num_cols_reg": [
+    "co",
+    "o3",
+    "pm10",
+    "pm2_5",
+    "so2",
+    "temperature_c",
+    "humidity_percent",
+    "pressure_hpa",
+    "wind_speed_kmh",
+    "wind_direction_deg",
+    "precipitation_mm",
+    "hour",
+    "dow"
+  ],
+  "cat_cols_reg": [
+    "city",
+    "datetime",
+    "label_air_good"
+  ],
+  "class_mapping_example": {
+    "No": 0,
+    "Yes": 1
+  }
+}
