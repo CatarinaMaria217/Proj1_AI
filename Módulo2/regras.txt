@@ -1,0 +1,11 @@
+1: SE temp > 40 E hum < 20 ENTÃO risco_incendio_alto
+2: SE temp > 35 E wind > 40 ENTÃO risco_incendio_moderado
+3: SE event_type == 'fumo' E hum < 30 ENTÃO risco_incendio_alto
+4: SE event_type == 'ruido' E wind > 50 ENTÃO risco_acidente_via
+5: SE temp > 40 E hum < 10 E wind > 30 ENTÃO risco_incendio_critico
+6: SE temp >= 30 E hum < 20 ENTÃO vigilancia_fortemente_recomendada
+7: SE event_type == 'fumo' E wind < 20 ENTÃO possivel_fuga_quimica
+8: SE hum < 15 E temp > 38 ENTÃO reduzir_atividades_ao_ar_livre
+9: SE wind > 70 ENTÃO risco_queda_estruturas
+10: SE event_type == 'ruido' E temp < 0 ENTÃO risco_congelamento_sistemas
+11: SE event_type == 'fumo' E temp > 30 E hum < 25 ENTÃO prioridade_imediata
