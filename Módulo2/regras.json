@@ -1,48 +1,13 @@
 [
-  {
-    "id": 1,
-    "rule": "SE temp > 40 E hum < 20 ENTÃO risco_incendio_alto"
-  },
-  {
-    "id": 2,
-    "rule": "SE temp > 35 E wind > 40 ENTÃO risco_incendio_moderado"
-  },
-  {
-    "id": 3,
-    "rule": "SE event_type == 'fumo' E hum < 30 ENTÃO risco_incendio_alto"
-  },
-  {
-    "id": 4,
-    "rule": "SE event_type == 'ruido' E wind > 50 ENTÃO risco_acidente_via"
-  },
-  {
-    "id": 5,
-    "rule": "SE temp > 40 E hum < 10 E wind > 30 ENTÃO risco_incendio_critico"
-  },
-  {
-    "id": 6,
-    "rule": "SE temp >= 30 E hum < 20 ENTÃO vigilancia_fortemente_recomendada"
-  },
-  {
-    "id": 7,
-    "rule": "SE event_type == 'fumo' E wind < 20 ENTÃO possivel_fuga_quimica"
-  },
-  {
-    "id": 8,
-    "rule": "SE hum < 15 E temp > 38 ENTÃO reduzir_atividades_ao_ar_livre"
-  },
-  {
-    "id": 9,
-    "rule": "SE wind > 70 ENTÃO risco_queda_estruturas"
-  },
-  {
-    "id": 10,
-    "rule": "SE event_type == 'ruido' E temp < 0 ENTÃO risco_congelamento_sistemas"
-  },
-  {
-    "id": 11,
-    "rule": "SE event_type == 'fumo' E temp > 30 E hum < 25 ENTÃO prioridade_imediata"
-  }
+  { "id": 1, "rule": "SE temp > 40 E hum < 20 ENTÃO risco_incendio_alto" },
+  { "id": 2, "rule": "SE temp > 35 E wind > 40 ENTÃO risco_incendio_moderado" },
+  { "id": 3, "rule": "SE wind > 50 E hum < 25 ENTÃO propagacao_incendio_acelerada" },
+  { "id": 4, "rule": "SE temp > 32 E event_type == 'heat' ENTÃO alerta_onda_de_calor" },
+  { "id": 5, "rule": "SE temp > 40 E hum < 10 E wind > 30 ENTÃO risco_incendio_critico" },
+  { "id": 6, "rule": "SE temp >= 30 E hum < 20 ENTÃO vigilancia_fortemente_recomendada" },
+  { "id": 7, "rule": "SE event_type == 'smoke' E wind < 20 ENTÃO possivel_fuga_quimica" },
+  { "id": 8, "rule": "SE hum < 15 E temp > 38 ENTÃO reduzir_atividades_ao_ar_livre" },
+  { "id": 9, "rule": "SE wind > 60 E temp < 5 ENTÃO risco_hipotermia" },
+  { "id": 10, "rule": "SE temp < 5 E wind > 40 ENTÃO alerta_frio_severo" },
+  { "id": 11, "rule": "SE event_type == 'smoke' E temp > 30 E hum < 25 ENTÃO incêndio_prioridade_imediata" }
 ]
-
-
